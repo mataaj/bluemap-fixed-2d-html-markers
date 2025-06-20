@@ -13,13 +13,15 @@ Download or copy [fixedHtml2dMarkers.js](https://github.com/mataaj/bluemap-fixed
 Nothing will happen right after installing the script. This is normal. To make a specific html marker scale and rotate with the map, you need to add the `fixed-on-map` class to it.
 
 ```
+//example of a marker config with the "fixed-on-map" class
+
 example-marker: {
   type: "html"
   position: { x: 100, y: 128, z: 100 }
   label: "example marker"
   html: "<img src='assets/example_marker.png ' alt='some marker)'>"
   classes: [
-    "fixed-on-map" //this class makes the marker scale and rotate with map
+    "fixed-on-map" //this class makes the marker scale and rotate with the map
   ]
 }
 ```
@@ -32,7 +34,7 @@ The script only works well in 2D Orthographic / Flat view. If you have Perspecti
 ```
 ...
 classes: [
-  "fixed-on-map" //this class makes the marker scale and rotate with map
+  "fixed-on-map" //this class makes the marker scale and rotate with the map
   "hide-on-3d-view" //this class hides the marker when either Perspective or Free Flight view is active
 ]
 ```
